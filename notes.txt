@@ -9,10 +9,26 @@ ____________________________________________________
 
 1. Set up github repo
     - new environment
-    - mini project structure - setup.py
+    - mini project structure - setup.py - to create package
     - req.txt
         numpy
         pandas
         -e .   //it automatically run setup.py
     mlproject.egg-info is created after running pip install -e . 
     mlproject.egg-info is a folder which contains metadata about our project
+
+2 folder(package) structure
+    src                             //root folder
+    ├── components                  //all major components
+    │   ├── data_ingestion.py       //data ingestion related code
+    │   ├── data_transformation.py  //data transformation related code
+    │   ├── __init__.py             //to make this folder as package
+    │   └── model_trainer.py        //model training related code
+    ├── exception.py                //custom exception handling
+    ├── __init__.py                 //to make src folder as package
+    ├── logger.py                   //logging module
+    ├── pipeline                    //pipeline related code
+    │   ├── __init__.py             //to make this folder as package
+    │   ├── predict_pipeline.py     //prediction pipeline code
+    │   └── train.pipeline.py       //training pipeline code
+    └── utils.py                    //utility functions
