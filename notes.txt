@@ -11,4 +11,8 @@ ____________________________________________________
     - new environment
     - mini project structure - setup.py
     - req.txt
-    
+        numpy
+        pandas
+        -e .   //it automatically run setup.py
+    mlproject.egg-info is created after running pip install -e . 
+    mlproject.egg-info is a folder which contains metadata about our project
