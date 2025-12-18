@@ -1,0 +1,14 @@
+End to End ML Project-
+setup project with github - ci/cd pipeline
+1. data ingestion
+2. data transformation
+3. model training
+4. model evaluation
+5. model deployment(aws)
+____________________________________________________
+
+1. Set up github repo
+    - new environment
+    - mini project structure - setup.py
+    - req.txt
+    
